@@ -1,0 +1,159 @@
+:root {
+    --black: #2d2d2d;
+    --grey: #999999;
+}
+
+html, body {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #2d2d2d;
+    background-color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.page {
+    margin: 1cm auto;
+    background: #fff; /* Define a white paper background that sticks out from the darker overall background */
+    outline: 0; /* Override outline from user agent stylesheets */
+    width: 21cm;
+    height: 28cm;
+    padding-left: 1cm;
+    padding-top: 1cm;
+    padding-right: 1cm;
+    padding-bottom: 1cm;
+    /*border: grey 1px solid;*/
+}
+
+@media print {
+    html, body {
+        background-color: #fff;
+    }
+
+    .page {
+        width: initial !important;
+        height: 27cm !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        page-break-after: always;
+    }
+}
+
+@page {
+    size: A4 portrait;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 1cm;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.letter-head-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.letter-head-item p {
+    border-bottom: #787979 1px dotted;
+    padding-bottom: 10px;
+}
+
+.invoice-head{
+    margin-top: 50px;
+}
+
+.invoice-head-details{
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.invoice-head h1 {
+    font-weight: normal;
+    border-bottom: #787979 1px dotted;
+}
+
+.invoice-content {
+    flex-direction: column;
+    align-content: flex-end;
+    margin-top: 50px;
+}
+
+table {
+    border-spacing: 0;
+    text-align: left;
+}
+
+table tbody td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table-main {
+    width: 100%;
+}
+
+.table-main thead th {
+    border-bottom: #999999 1px solid;
+}
+
+.table-main tbody tr:last-child td {
+    border-bottom: #999999 1px solid;
+}
+
+.table-totals {
+    margin-top: 20px;
+    margin-left: auto;
+    width: 40%
+}
+
+.table-totals tbody tr:nth-last-child(2) td {
+    border-bottom: #999999 1px solid;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-box .box {
+    text-align: center;
+    border: #999999 1px solid;
+    width: 200px;
+    height: 70px;
+    font-weight: bold;
+}
+
+.footer-box .box h3{
+    font-weight: normal;
+    margin-bottom: 0.7rem;
+}
+
+.footer .text {
+    margin-top: 30px;
+}
