@@ -1,0 +1,24 @@
+{
+    "invoiceNumber": "2019.1",
+    "invoiceDate": "",
+    "invoicePeriod": "",
+    "paymentTermInDays": 30,
+    "contact": {
+        "name": "TKP Pensioen BV",
+        "address": {
+            "street": "Europaweg",
+            "number": "27",
+            "postalcode": "9723 AS",
+            "city": "Groningen"
+        }
+    },
+    "invoiceLines": [
+        {
+            "description": "Senior DevOps Java/Fullstack engineer",
+            "quantity": 115,
+            "amountInCents": 8000,
+            "vat_percentage": 21
+        }
+    ],
+    "invoiceIBAN": "NL37KNAB0741083701"
+}
