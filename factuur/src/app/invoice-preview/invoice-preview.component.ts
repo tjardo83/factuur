@@ -10,10 +10,12 @@ import { InvoiceDataService } from './invoice-data.service';
 export class InvoicePreviewComponent implements OnInit {
 
   imageUrl = 'assets/Elogio-logo.png';
+  invoiceDataService: InvoiceDataService;
+  invoiceData: any;
 
-  constructor(invoiceData: InvoiceDataService) {
-    invoiceData.getInvoiceData();
-    console.log(invoiceData.getInvoiceData().invoiceNumber);
+  constructor(invoiceDataService: InvoiceDataService) {
+    this.invoiceDataService = invoiceDataService;
+    this.invoiceData = this.invoiceDataService.getInvoiceData();
   }
 
   ngOnInit() {
