@@ -2,7 +2,15 @@
     "invoiceNumber": "2019.1",
     "invoiceDate": "",
     "invoicePeriod": "",
-    "paymentTermInDays": 30,
+    "administration": {
+        "iban": "NL37KNAB0741083701",
+        "adress": {
+            "street": "Eenkoorn",
+            "number": "25",
+            "postalcode": "9751 WJ",
+            "city": "Haren"
+        }
+    },
     "contact": {
         "name": "TKP Pensioen BV",
         "address": {
@@ -10,6 +18,10 @@
             "number": "27",
             "postalcode": "9723 AS",
             "city": "Groningen"
+        },
+        "paymentDetails": {
+            "iban": "",
+            "paymentTermInDays": 30
         }
     },
     "invoiceLines": [
@@ -19,6 +31,5 @@
             "amountInCents": 8000,
             "vat_percentage": 21
         }
-    ],
-    "invoiceIBAN": "NL37KNAB0741083701"
+    ]
 }
