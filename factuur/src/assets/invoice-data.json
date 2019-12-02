@@ -1,10 +1,14 @@
 {
-    "invoiceNumber": "2019.2",
-    "invoiceDate": "",
-    "invoicePeriod": "",
+    "invoiceNumber": "2019.11",
+    "invoiceDate": "02-12-2019",
+    "invoiceDueDate": "02-01-2020",
+    "invoicePeriod": "11-2019",
     "administration": {
-        "iban": "NL37KNAB0741083701",
-        "adress": {
+        "iban": "NL37 KNAB 0741 0837 01",
+        "name": "Elogio BV",
+        "kvkNumber": "72015500",
+        "vatNumber": "NL858945599B01",
+        "address": {
             "street": "Eenkoorn",
             "number": "25",
             "postalcode": "9751 WJ",
@@ -27,9 +31,13 @@
     "invoiceLines": [
         {
             "description": "Senior DevOps Java/Fullstack engineer",
-            "quantity": 115,
-            "amountInCents": 8000,
-            "vat_percentage": 21
+            "quantity": 153,
+            "amountInCents": "80,00",
+            "vat_percentage": "21",
+            "amountExcludingVat": "12.240,00"
         }
-    ]
+    ],
+    "invoiceTotalAmountExclVat": "12.240,00",
+    "invoiceTotalAmountInclVat": "14.810,40",
+    "invoiceTotalVatAmount": "2.570,40"
 }
